@@ -9,7 +9,7 @@ Event Management System
 5. Once the project is created, right click on the project Maven > Update project, this will download all the dependencies.
 
 ## Downloads & Installations
-1. Tomcat : http://tomcat.apache.org/download-80.cgi
+1. Tomcat : https://tomcat.apache.org/download-70.cgi
 2. Maven : https://maven.apache.org/download.cgi
 
 ### Tomcat Configurations
