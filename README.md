@@ -4,4 +4,6 @@ Event Management System
 #Project Setup
 1. Open Eclipse > Import > Git > Project From Git > Clone URI and hit next
 2. Type URI: https://github.com/prashanthsandela/EMS <br /> User: yourGithubEmailAddress@xyz.com<br />Password: Your github password <br /> Check secure store and hit next
-3. 
+3. Next screen select Dev and hit next and next
+4. Now project import setup wizard will apprear. Select radio button for "Use the new project wizard" and click on finish.
+5. Now from the list of projects select Maven and 
