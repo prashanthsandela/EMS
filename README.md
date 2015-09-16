@@ -25,7 +25,7 @@ Event Management System
 https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
 
 ## Configure Users in Tomcat
-<tomcat-users>
+"<tomcat-users>
 <user username="admin" password="password" roles="manager-gui" />
 <role rolename="admin"/>
      <role rolename="manager-script"/>
@@ -33,4 +33,4 @@ https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2
      <role rolename="manager-jmx"/>
      <user username="admin" password="password" roles="manager-gui,admin,manager-jmx,manager-script" />
  
-</tomcat-users>
+</tomcat-users>"
