@@ -24,10 +24,12 @@ public class MongoAdapter {
 
 	// ------- CONSTANTS -------------------------------------------------//
 
-	private final String hostname = "localhost";
-	private final int port = 27017;
+	private final static String hostname = "localhost";
+	private final static int port = 27017;
 	private final static String database = "local";
+	@SuppressWarnings("unused")
 	private final String username = "root";
+	@SuppressWarnings("unused")
 	private final String password = "donno";
 
 	// ------- STATIC FIELDS ---------------------------------------------//
@@ -78,7 +80,7 @@ public class MongoAdapter {
 	private static void establishConnection() {
 		LOGGER.debug("IN METHOD establishConnection");
 
-		MongoClient mongoClient = new MongoClient("localhost", 27017);
+		MongoClient mongoClient = new MongoClient(hostname, port);
 		db = mongoClient.getDatabase(database);
 	}
 
