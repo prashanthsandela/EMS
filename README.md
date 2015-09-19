@@ -11,6 +11,7 @@ Event Management System
 ## Downloads & Installations
 1. Tomcat : https://tomcat.apache.org/download-70.cgi
 2. Maven : https://maven.apache.org/download.cgi
+3. MongoDB : https://www.mongodb.org/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.0.6-signed.msi/download
 
 ### Tomcat Configurations
 1. Server Shutdown Port 8005
