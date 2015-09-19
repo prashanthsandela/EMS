@@ -6,6 +6,9 @@ package com.ems.testData.mongo;
 
 import org.junit.Test;
 
+/**
+ * Calls pushDataToDB method
+ */
 public class PushDataToDBTest {
 
 	@Test
