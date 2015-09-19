@@ -1,4 +1,4 @@
-package com.util.ems.org;
+package com.ems.testData.mongo;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,29 +6,32 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
-import org.glassfish.hk2.utilities.reflection.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
+/**
+ * @author siddarth
+ */
+
+import org.junit.Test;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * 
- * @author siddarth
- *
- */
+public class PopulateTestDataTest {
 
-public class PopulateTestData {
-
-	final static Logger logger = Logger.getLogger();	
-	private final String urlName = "http://api.randomuser.me/?results=200";
+	final static Logger logger = LogManager.getLogger(PopulateTestData.class);
+	private final String urlName = "http://api.randomuser.me/?results=10";
 	
-	public List<UserPojo> getMockData() throws Exception{
+	@Test
+	public void testGetMockData() {
 		
 		StringBuilder jsonArray = new StringBuilder();
 		String output = null;
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		Results data = null;
+		List<Users> totalUsers = null;
 		try
 		{
 			URL url = new URL(urlName);
@@ -45,17 +48,26 @@ public class PopulateTestData {
 					InputStreamReader(conn.getInputStream()));
 			
 			while((output=br.readLine())!=null){
-				jsonArray.append(output);
+				jsonArray.append(output.trim());
+				
 			}
 			
+			System.out.println(jsonArray.toString());
 			data = mapper.readValue(jsonArray.toString(), Results.class);
+			System.out.println(data.getResults());
+			totalUsers = data.getResults();
+			for(Users obj1 : totalUsers){
+				User obj = obj1.getUser();
+				System.out.println(obj.getEmail());
+			}
+			
 			
 		}catch(Exception e){
 			System.out.println("Exception caught in generating mock data : + "+e);
 			logger.debug("Exception caught in generating mock data : + "+e);
 		}			
+
 		
-		return data.getResults();
 	}
-		
+
 }

@@ -1,4 +1,10 @@
-package com.util.ems.org;
+package com.ems.testData.mongo;
+
+/**
+ * 
+ * @author siddarth
+ *
+ */
 
 public class Location {
 	
@@ -6,6 +12,7 @@ public class Location {
 	private String city;
 	private String state;
 	private String zip;
+	
 	public String getStreet() {
 		return street;
 	}
@@ -30,6 +37,5 @@ public class Location {
 	public void setZip(String zip) {
 		this.zip = zip;
 	}
-	
 
 }

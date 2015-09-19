@@ -1,8 +1,16 @@
-package com.util.ems.org;
+package com.ems.testData.mongo;
 
-public class UserPojo {
-	
-	private User user;
+/**
+ * 
+ * @author siddarth
+ *
+ */
+
+public class User {
+
+	private String gender;
+	private Name name;
+	private Location location;
 	private String email;
 	private String dob;
 	private String username;
@@ -10,12 +18,6 @@ public class UserPojo {
 	private String phone;
 	private String registered;
 	
-	public User getUser() {
-		return user;
-	}
-	public void setUser(User user) {
-		this.user = user;
-	}
 	public String getEmail() {
 		return email;
 	}
@@ -51,6 +53,24 @@ public class UserPojo {
 	}
 	public void setRegistered(String registered) {
 		this.registered = registered;
-	}	
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public Name getName() {
+		return name;
+	}
+	public void setName(Name name) {
+		this.name = name;
+	}
+	public Location getLocation() {
+		return location;
+	}
+	public void setLocation(Location location) {
+		this.location = location;
+	}
 	
 }

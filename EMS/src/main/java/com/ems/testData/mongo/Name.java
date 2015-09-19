@@ -1,4 +1,10 @@
-package com.util.ems.org;
+package com.ems.testData.mongo;
+
+/**
+ * 
+ * @author siddarth
+ *
+ */
 
 public class Name {
 	
@@ -24,4 +30,5 @@ public class Name {
 	public void setLast(String last) {
 		this.last = last;
 	}
+	
 }

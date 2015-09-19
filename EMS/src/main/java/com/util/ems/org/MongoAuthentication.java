@@ -11,11 +11,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import org.glassfish.hk2.utilities.reflection.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.*;
+
+import com.ems.testData.mongo.PopulateTestData;
 
 public class MongoAuthentication {
 	
-	final static Logger logger = Logger.getLogger();	
+	final static Logger logger = LogManager.getLogger(PopulateTestData.class);	
 	private static String propName = "mongodb.properties";
 	
 	/**
