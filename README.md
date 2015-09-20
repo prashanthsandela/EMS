@@ -35,3 +35,6 @@ https://www.youtube.com/watch?v=xkKcdK1u95s&list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2
      <user username="admin" password="password" roles="manager-gui,admin,manager-jmx,manager-script" />
  
 </tomcat-users>"
+
+## Quora Advice
+https://www.quora.com/Ive-just-started-developing-a-product-with-couple-of-my-friends-which-I-believe-is-going-to-be-game-changing-We-all-are-new-grads-and-we-lack-experience-selecting-architecture-design-patterns-Where-should-we-look-for-guidance-reasearch?__snids__=1353514617&__nsrc__=1&__filter__=all
