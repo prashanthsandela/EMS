@@ -38,7 +38,7 @@ public class MongoAdapter {
 
 	// ------- INSTANCE FIELDS -------------------------------------------//
 
-	private static MongoAdapter mongoAdapter = new MongoAdapter();
+	public final static MongoAdapter mongoAdapter = new MongoAdapter();
 
 	// ------- DYNAMIC FIELDS --------------------------------------------//
 
